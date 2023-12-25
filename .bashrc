@@ -130,6 +130,7 @@ fi
 
 # bare git repo alias for dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
+# don't forget to run this command in the shell after setting this alias : config config --local status.showUntrackedFiles no
 
 # Starship prompt needs to be installed first.
 eval "$(starship init bash)"
