@@ -1,4 +1,4 @@
-format = '$all$character'
+format = '$all'
 
 #format = """
 #[╭─user───❯](bold blue) $username
@@ -18,14 +18,14 @@ show_always = true
 # trim_at = "."
 disabled = false
 ssh_symbol = " "
-ssh_only = false
+ssh_only = true
 format = '[$ssh_symbol](bold blue)\[[$hostname](bold red)\] '
 # format = 'on [$hostname](bold purple) '
 # trim_at = '.companyname.com'
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+# success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
 error_symbol = "[✗](bold red)"
 
 #  
