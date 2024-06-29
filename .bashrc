@@ -138,6 +138,7 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 
 # Starship prompt needs to be installed first.
 eval "$(starship init bash)"
+
 export PATH="$PATH:/opt/nvim/"
 
 export NVM_DIR="$HOME/.nvm"
@@ -146,3 +147,5 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 
 export PATH=~/anaconda3/bin:$PATH
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
