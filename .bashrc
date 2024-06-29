@@ -92,9 +92,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 # Some more handy ls aliases (needs exa installed on the system to work)
 
 #alias ll='ls -alF'
@@ -136,8 +133,11 @@ fi
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 # don't forget to run this command in the shell after setting this alias : config config --local status.showUntrackedFiles no
 
-# Starship prompt needs to be installed first.
-eval "$(starship init bash)"
+# -----------------------------------
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 
 export PATH="$PATH:/opt/nvim/"
 
@@ -148,4 +148,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=~/anaconda3/bin:$PATH
 
+# Starship prompt needs to be installed first.
+eval "$(starship init bash)"
+
+# Fzf util
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
